@@ -1,0 +1,166 @@
+* {
+    font-family: 'NanumBarunGothic', sans-serif;
+    color: #fff;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 999;
+}
+
+.header-logo {
+    width: 89px;
+    height: 36px;
+}
+
+.shere-btn-wrap {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 4px;
+    background-color: rgba(1, 1, 1, 0);
+    padding: 0 12px;
+    text-align: center;
+    height: 32px;
+    box-sizing: border-box;
+}
+
+.shere-btn-wrap span {
+    color: #fff;
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.shere-btn-wrap::before {
+    content: "";
+    display: block;
+    clear: both;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background-size: 1683px auto;
+    background-position: -1660px -189px;
+    background-image: url(../imgs/sprite_promotion_20thAnniversary_pc.png);
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+.nav-wrap {
+    position: absolute;
+    top: 664px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.nav-wrap ul {
+    width: 1100px;
+    display: flex;
+}
+
+.nav-wrap li {
+    text-align: center;
+    width: 25%;
+    background-color: #000;
+    border-left: 1px solid #313131;
+}
+
+.nav-wrap li a {
+    color: #707070;
+    font-size: 24px;
+    text-decoration: none;
+    line-height: 86px;
+}
+
+.banner-wrap {
+    background-image: url(../imgs/bg_20thAnniversary.gif);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 750px;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-wrap img {
+    width: 1045px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: downUp 1s ease-out 1;
+}
+
+.eventContent-wrap {
+    background-color: #151515;
+    padding: 130px 0 100px;
+}
+
+.eventContent-wrap .inner {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.eventContent-wrap .title {
+    background-image: url(../imgs/sprite_promotion_20thAnniversary_pc.png);
+    background-size: 1683px auto;
+    background-position: -1114px 0;
+    background-repeat: no-repeat;
+    width: 569px;
+    height: 141px;
+    margin: 0 auto 24px auto;
+}
+
+.eventContent-wrap .title-wrap {
+    text-align: center;
+    margin-bottom: 69px;
+}
+
+.eventContent-wrap .title-wrap p {
+    display: inline-block;
+    font-size: 16px;
+    color: #FFF;
+    line-height: 28px;
+}
+
+.gift-wrap {
+    height: 842px;
+    background-image: url(../imgs/img_vipEventGift.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+}
+
+.gift-wrap p {
+    font-size: 24px;
+    font-weight: 350;
+    color: #FFF;
+    line-height: 34px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+    display: inline-block;
+}
+
+.eventContent-wrap button {
+    border: 1px solid red;
+    height: 68px;
+    width: 286px;
+    margin: 0 auto;
+    border-radius: 34px;
+    background: #FF0061;
+    line-height: 68px;
+    display: block;
+}
+
+.eventContent-wrap .giude-wrap {
+    padding: 76px 0 0 222px;
+    border: 1px solid red;
+}
