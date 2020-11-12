@@ -1,7 +1,41 @@
 * {
     font-family: 'NanumBarunGothic', sans-serif;
-    color: #fff;
+    line-height: 1;
 }
+.banner-img {
+ animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+/*
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 200px, 0)
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+*/
 
 header {
     position: absolute;
@@ -84,19 +118,20 @@ header {
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
-    background-repeat: no-repeat;
     height: 750px;
     position: relative;
     z-index: 1;
 }
 
-.banner-wrap img {
+.banner-wrap .banner {
     width: 1045px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: downUp 1s ease-out 1;
+    margin: 0 auto;
+    padding-top: 194px;
+}
+
+.banner-wrap img {
+    display: block;
+    width: 100%;
 }
 
 .eventContent-wrap {
@@ -150,7 +185,6 @@ header {
 }
 
 .eventContent-wrap button {
-    border: 1px solid red;
     height: 68px;
     width: 286px;
     margin: 0 auto;
@@ -158,9 +192,60 @@ header {
     background: #FF0061;
     line-height: 68px;
     display: block;
+    font-size: 18px;
+    text-align: center;
+    border: 0;
+    outline: 0 none;
+    color: #fff;
 }
 
 .eventContent-wrap .giude-wrap {
     padding: 76px 0 0 222px;
-    border: 1px solid red;
+}
+
+.giude-wrap h2 {
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 17px;
+}
+
+.giude-wrap li {
+    font-size: 14px;
+    color: #898989;
+    line-height: 28px;
+    padding-left: 13px;
+    position: relative;
+}
+
+.giude-wrap li::before {
+    content: "";
+    display: inline-block;
+    clear: both;
+    width: 2px;
+    height: 2px;
+    top: 14px;
+    left: 1px;
+    border-radius: 50%;
+    background-color: #898989;
+    position: absolute;
+}
+
+footer {
+    padding: 30px 0;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+footer button {
+    margin-left: 5px;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #b4b2b3;
+    background-color: #fff;
+    padding: 0 14px;
 }
