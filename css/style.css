@@ -2,21 +2,17 @@
     font-family: 'NanumBarunGothic', sans-serif;
     line-height: 1;
 }
-.banner-img {
- animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 2s; /* don't forget to set a duration! */
-}
 
-/*
 .animated {
     animation-duration: 1s;
     animation-fill-mode: both;
     -webkit-animation-duration: 1s;
-    -webkit-animation-fill-mode: both
+    -webkit-animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
 }
 
 .animatedFadeInUp {
-    opacity: 0
+    opacity: 0;
 }
 
 .fadeInUp {
@@ -27,7 +23,7 @@
 
 @keyframes fadeInUp {
     from {
-        transform: translate3d(0, 200px, 0)
+        transform: translate3d(0, 60px, 0)
     }
 
     to {
@@ -35,7 +31,6 @@
         opacity: 1
     }
 }
-*/
 
 header {
     position: absolute;
@@ -124,19 +119,21 @@ header {
 }
 
 .banner-wrap .banner {
-    width: 1045px;
     margin: 0 auto;
-    padding-top: 194px;
+    width: 1045px;
 }
 
 .banner-wrap img {
     display: block;
-    width: 100%;
+    width: 1045px;
+    position: absolute;
+    top: 194px;
 }
 
 .eventContent-wrap {
     background-color: #151515;
     padding: 130px 0 100px;
+    position: relative;
 }
 
 .eventContent-wrap .inner {
